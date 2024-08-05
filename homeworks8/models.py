@@ -43,9 +43,11 @@ class SubTask(models.Model):
         verbose_name = 'Subtask'
 
 
-
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True, verbose_name="Наименование категории")
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        verbose_name_plural = 'Categories'
