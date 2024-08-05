@@ -50,4 +50,5 @@ class Category(models.Model):
         return self.name
 
     class Meta:
+        db_table = 'task_manager_category'
         verbose_name_plural = 'Categories'
